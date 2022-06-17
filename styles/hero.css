@@ -1,0 +1,26 @@
+.hero__bg {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.hero__content {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heroContent__logo {
+  height: 10rem;
+}
+
+.heroContent__text {
+  color: var(--c-white);
+}

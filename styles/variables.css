@@ -1,7 +1,10 @@
 :root {
-  /* Font-family */
+  /* Font family */
   --ff-special: "Pacifico", cursive;
   --ff-default: "Nunito Sans", sans-serif;
+
+  /* Font Sizes */
+  --fz-default: 1.2rem;
 
   /* Colors */
   --c-green: #1a5451;
