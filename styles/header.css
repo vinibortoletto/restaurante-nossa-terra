@@ -82,7 +82,7 @@
   gap: 1rem;
 }
 
-.headerNavDesktopListItem__link.active {
+.header__link.active {
   color: var(--c-yellow);
   font-weight: bold;
 }

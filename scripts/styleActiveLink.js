@@ -1,7 +1,5 @@
 export function styleActiveLink() {
-  const linkElmts = document.querySelectorAll(
-    ".headerNavDesktopListItem__link"
-  );
+  const linkElmts = document.querySelectorAll(".header__link");
 
   linkElmts.forEach((link) => {
     link.addEventListener("click", () => {
