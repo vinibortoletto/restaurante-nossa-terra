@@ -14,24 +14,69 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/_style.css" />
+
+    <!-- JavaScript -->
+    <script type="module" src="/scripts/_script.js" async></script>
   </head>
   <body>
-    <header class="pageHeader">
+    <header class="header" id="inicio">
       <img
-        class="pageHeader__logo"
+        class="header__logo"
         src="/images/logo.png"
         alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
       />
 
-      <nav class="pageHeader__nav">
-        <i class="pageHeaderNav__icon fa-solid fa-bars"></i>
+      <!-- Mobile Menu -->
+      <nav class="header__navMobile">
+        <button type="button" id="headerNavMobile__button">
+          <i class="headerNavMobile__icon fa-solid fa-bars"></i>
+        </button>
 
-        <ul class="pageHeaderNav__list">
-          <li class="pageHeaderNavList__item">Início</li>
-          <li class="pageHeaderNavList__item">Cardápio</li>
-          <li class="pageHeaderNavList__item">Depoimentos</li>
-          <li class="pageHeaderNavList__item">Sobre</li>
-          <li class="pageHeaderNavList__item">Contato</li>
+        <ul class="headerNavMobile__list hide" id="menu">
+          <li class="headerNavMobileList__item">
+            <a href="#inicio">Início</a>
+          </li>
+          <li class="headerNavMobileList__item">
+            <a href="#cardapio">Cardápio</a>
+          </li>
+          <li class="headerNavMobileList__item">
+            <a href="#depoimentos">Depoimentos</a>
+          </li>
+          <li class="headerNavMobileList__item"><a href="#sobre">Sobre</a></li>
+          <li class="headerNavMobileList__item">
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="header__navDesktop">
+        <ul class="headerNavDesktop__list">
+          <li class="headerNavDesktopList__item active">
+            <a class="headerNavDesktopListItem__link active" href="#inicio"
+              >Início</a
+            >
+          </li>
+          <li class="headerNavDesktopList__item">
+            <a class="headerNavDesktopListItem__link" href="#cardapio"
+              >Cardápio</a
+            >
+          </li>
+          <li class="headerNavDesktopList__item">
+            <a class="headerNavDesktopListItem__link" href="#depoimentos"
+              >Depoimentos</a
+            >
+          </li>
+          <li class="headerNavDesktopList__item">
+            <a class="headerNavDesktopListItem__link" href="#sobre">Sobre</a>
+          </li>
+          <li class="headerNavDesktopList__item">
+            <a class="headerNavDesktopListItem__link" href="#contato"
+              >Contato</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
