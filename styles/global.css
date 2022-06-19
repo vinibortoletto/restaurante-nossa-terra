@@ -2,6 +2,7 @@
 
 * {
   color: var(--c-green);
+  box-sizing: border-box;
 }
 
 body {

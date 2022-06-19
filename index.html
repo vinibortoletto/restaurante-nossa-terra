@@ -22,12 +22,14 @@
     <script type="module" src="/scripts/_script.js" async></script>
   </head>
   <body>
-    <header class="header" id="inicio">
-      <img
-        class="header__logo"
-        src="/images/logo.png"
-        alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
-      />
+    <header class="header" id="header">
+      <div class="header__logoContainer">
+        <img
+          class="header__logo"
+          src="/images/logo.png"
+          alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
+        />
+      </div>
 
       <!-- Menu Mobile -->
       <nav class="header__menu--mobile">
@@ -58,19 +60,29 @@
       <nav class="header__menu--desktop">
         <ul class="header__list--desktop">
           <li>
-            <a class="header__link active" href="#inicio">Início</a>
+            <a class="header__link header__link--desktop active" href="#inicio"
+              >Início</a
+            >
           </li>
           <li>
-            <a class="header__link" href="#cardapio">Cardápio</a>
+            <a class="header__link header__link--desktop" href="#cardapio"
+              >Cardápio</a
+            >
           </li>
           <li>
-            <a class="header__link" href="#depoimentos">Depoimentos</a>
+            <a class="header__link header__link--desktop" href="#depoimentos"
+              >Depoimentos</a
+            >
           </li>
           <li>
-            <a class="header__link" href="#sobre">Sobre</a>
+            <a class="header__link header__link--desktop" href="#sobre"
+              >Sobre</a
+            >
           </li>
           <li>
-            <a class="header__link" href="#contato">Contato</a>
+            <a class="header__link header__link--desktop" href="#contato"
+              >Contato</a
+            >
           </li>
         </ul>
       </nav>
