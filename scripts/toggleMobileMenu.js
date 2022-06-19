@@ -1,4 +1,4 @@
-export const menuButton = document.getElementById("headerNavMobile__button");
+export const menuButton = document.getElementById("header__button");
 
 export function toggleMobileMenu() {
   const menu = document.getElementById("menu");

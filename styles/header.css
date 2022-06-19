@@ -14,11 +14,11 @@
 }
 
 /* Mobile Menu --------------------------------------------------- */
-.headerNavMobile__icon {
+.header__icon {
   font-size: 40px;
 }
 
-.headerNavMobile__list {
+.header__list--mobile {
   width: 100%;
 
   position: absolute;
@@ -34,18 +34,18 @@
   opacity: 0;
 }
 
-.headerNavMobile__list.show {
+.header__list--mobile.show {
   top: 100%;
   bottom: auto;
   opacity: 1;
 }
 
-.headerNavMobile__list.hide {
+.header__list--mobile.hide {
   bottom: 110%;
   opacity: 0;
 }
 
-.headerNavMobileList__item {
+.header__item--mobile {
   width: 100%;
   padding: 1rem 0;
 
@@ -54,30 +54,31 @@
   background-color: var(--c-white);
 }
 
-.headerNavMobileList__item:nth-of-type(odd) {
+.header__item--mobile:nth-of-type(odd) {
   background-color: var(--c-dark-white);
 }
 
-/* Hide Mobile Menu when screen is larger than 768px */
+/* Hide mobile menu when screen is larger than 768px */
 @media screen and (min-width: 768px) {
-  .header__navMobile {
+  .header__menu--mobile {
     display: none;
   }
 }
 
 /* Desktop Menu --------------------------------------------------- */
-.header__navDesktop {
-  /* Hide Desktop Menu when screen is smaller than 768px  */
+/* Hide Desktop Menu when screen is smaller than 768px  */
+.header__menu--desktop {
   display: none;
 }
+
+/* Display Desktop Menu when screen is larger than 768px  */
 @media screen and (min-width: 768px) {
-  /* Display Desktop Menu when screen is larger than 768px  */
-  .header__navDesktop {
+  .header__menu--desktop {
     display: flex;
   }
 }
 
-.headerNavDesktop__list {
+.header__list--desktop {
   display: flex;
   gap: 1rem;
 }

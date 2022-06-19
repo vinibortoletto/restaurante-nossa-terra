@@ -29,46 +29,47 @@
         alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
       />
 
-      <!-- Mobile Menu -->
-      <nav class="header__navMobile">
-        <button type="button" id="headerNavMobile__button">
-          <i class="headerNavMobile__icon fa-solid fa-bars"></i>
+      <!-- Menu Mobile -->
+      <nav class="header__menu--mobile">
+        <button type="button" id="header__button">
+          <i class="header__icon fa-solid fa-bars"></i>
         </button>
 
-        <ul class="headerNavMobile__list hide" id="menu">
-          <li class="headerNavMobileList__item">
+        <ul class="header__list--mobile hide" id="menu">
+          <li class="header__item--mobile">
             <a class="header__link active" href="#inicio">Início</a>
           </li>
-          <li class="headerNavMobileList__item">
+          <li class="header__item--mobile">
             <a class="header__link" href="#cardapio">Cardápio</a>
           </li>
-          <li class="headerNavMobileList__item">
+          <li class="header__item--mobile">
             <a class="header__link" href="#depoimentos">Depoimentos</a>
           </li>
-          <li class="headerNavMobileList__item">
+          <li class="header__item--mobile">
             <a class="header__link" href="#sobre">Sobre</a>
           </li>
-          <li class="headerNavMobileList__item">
+          <li class="header__item--mobile">
             <a class="header__link" href="#contato">Contato</a>
           </li>
         </ul>
       </nav>
 
-      <nav class="header__navDesktop">
-        <ul class="headerNavDesktop__list">
-          <li class="headerNavDesktopList__item active">
+      <!-- Menu Desktop -->
+      <nav class="header__menu--desktop">
+        <ul class="header__list--desktop">
+          <li>
             <a class="header__link active" href="#inicio">Início</a>
           </li>
-          <li class="headerNavDesktopList__item">
+          <li>
             <a class="header__link" href="#cardapio">Cardápio</a>
           </li>
-          <li class="headerNavDesktopList__item">
+          <li>
             <a class="header__link" href="#depoimentos">Depoimentos</a>
           </li>
-          <li class="headerNavDesktopList__item">
+          <li>
             <a class="header__link" href="#sobre">Sobre</a>
           </li>
-          <li class="headerNavDesktopList__item">
+          <li>
             <a class="header__link" href="#contato">Contato</a>
           </li>
         </ul>
@@ -84,13 +85,13 @@
         />
 
         <div class="hero__content">
-          <p class="heroContent__text">Todos os sabores da</p>
+          <p class="hero__text">Todos os sabores da</p>
           <img
-            class="heroContent__logo"
+            class="hero__logo"
             src="./images/logo.png"
             alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
           />
-          <p class="heroContent__text">em um só lugar</p>
+          <p class="hero__text">em um só lugar</p>
         </div>
       </section>
 
@@ -99,20 +100,20 @@
 
         <!-- Feijoada -->
         <article class="ourDishes__dish">
-          <div class="ourDishesDish__imgContainer">
+          <div class="dish__imgContainer">
             <img
               src="./images/feijoada.png"
-              alt=""
-              class="ourDishesDish__img"
+              alt="Mesa de madeira, sobre a qual descansa um prato amerelo contendo arroz, feijoada, couve refogada, farinha e vinagrete. Ao lado, um punhado de grãos de feijão preto cru espalhado junto com três dentes de alho."
+              class="dish__img"
             />
-            <div class="ourDishesDish__imgBar--big"></div>
-            <div class="ourDishesDish__imgBar--small"></div>
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
           </div>
 
-          <div class="ourDishesDish__text">
-            <h3 class="ourDishesDishText__title">Feijoada</h3>
-            <h4 class="ourDishesDishText__subtitle">Sudeste</h4>
-            <p class="ourDishesDishText__description">
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Feijoada</h3>
+            <h4 class="dish__subtitle">Sudeste</h4>
+            <p class="dish__description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
               iusto quibusdam maxime ut omnis tempore aut placeat neque
               praesentium quas?
@@ -120,22 +121,22 @@
           </div>
         </article>
 
-        <!-- Pato no Tucupi -->
+        <!-- Pato No Tucupi -->
         <article class="ourDishes__dish ourDishes__dish--positionRight">
-          <div class="ourDishesDish__imgContainer">
+          <div class="dish__imgContainer">
             <img
               src="./images/pato-no-tucupi.png"
-              alt=""
-              class="ourDishesDish__img"
+              alt="Uma mesa de madeira, sobre a qual se encontra uma cassarola contendo um ensopado de pato no tucupi. Ao lado, um pequeno pote com farinha amarela, próximo à uma pano esverdeado."
+              class="dish__img"
             />
-            <div class="ourDishesDish__imgBar--big"></div>
-            <div class="ourDishesDish__imgBar--small"></div>
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
           </div>
 
-          <div class="ourDishesDish__text">
-            <h3 class="ourDishesDishText__title">Pato no Tucupi</h3>
-            <h4 class="ourDishesDishText__subtitle">Norte</h4>
-            <p class="ourDishesDishText__description">
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Pato no Tucupi</h3>
+            <h4 class="dish__subtitle">Norte</h4>
+            <p class="dish__description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
               iusto quibusdam maxime ut omnis tempore aut placeat neque
               praesentium quas?
@@ -143,22 +144,22 @@
           </div>
         </article>
 
-        <!-- Pato no Tucupi -->
+        <!-- Baião De Dois -->
         <article class="ourDishes__dish">
-          <div class="ourDishesDish__imgContainer">
+          <div class="dish__imgContainer">
             <img
               src="./images/baiao-de-dois.png"
-              alt=""
-              class="ourDishesDish__img"
+              alt="Mesa de madeira, na qual descansa uma panela com Baião De Dois, um arroz com vários tupos de legumes e carne."
+              class="dish__img"
             />
-            <div class="ourDishesDish__imgBar--big"></div>
-            <div class="ourDishesDish__imgBar--small"></div>
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
           </div>
 
-          <div class="ourDishesDish__text">
-            <h3 class="ourDishesDishText__title">Baião De Dois</h3>
-            <h4 class="ourDishesDishText__subtitle">Nordeste</h4>
-            <p class="ourDishesDishText__description">
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Baião De Dois</h3>
+            <h4 class="dish__subtitle">Nordeste</h4>
+            <p class="dish__description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
               iusto quibusdam maxime ut omnis tempore aut placeat neque
               praesentium quas?
@@ -168,20 +169,20 @@
 
         <!-- Arroz Com Pequi -->
         <article class="ourDishes__dish ourDishes__dish--positionRight">
-          <div class="ourDishesDish__imgContainer">
+          <div class="dish__imgContainer">
             <img
               src="./images/arroz-com-pequi.png"
-              alt=""
-              class="ourDishesDish__img"
+              alt="Uma travessa contendo arroz amarelado com pequis e carnes no meio."
+              class="dish__img"
             />
-            <div class="ourDishesDish__imgBar--big"></div>
-            <div class="ourDishesDish__imgBar--small"></div>
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
           </div>
 
-          <div class="ourDishesDish__text">
-            <h3 class="ourDishesDishText__title">Arroz Com Pequi</h3>
-            <h4 class="ourDishesDishText__subtitle">Centro-Oeste</h4>
-            <p class="ourDishesDishText__description">
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Arroz Com Pequi</h3>
+            <h4 class="dish__subtitle">Centro-Oeste</h4>
+            <p class="dish__description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
               iusto quibusdam maxime ut omnis tempore aut placeat neque
               praesentium quas?
@@ -191,20 +192,20 @@
 
         <!-- Churrasco -->
         <article class="ourDishes__dish">
-          <div class="ourDishesDish__imgContainer">
+          <div class="dish__imgContainer">
             <img
               src="./images/churrasco.png"
-              alt=""
-              class="ourDishesDish__img"
+              alt="Um grelha sobre brasas, com dois filés de carne sendo manejados por uma pessoa."
+              class="dish__img"
             />
-            <div class="ourDishesDish__imgBar--big"></div>
-            <div class="ourDishesDish__imgBar--small"></div>
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
           </div>
 
-          <div class="ourDishesDish__text">
-            <h3 class="ourDishesDishText__title">Churrasco</h3>
-            <h4 class="ourDishesDishText__subtitle">Sul</h4>
-            <p class="ourDishesDishText__description">
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Churrasco</h3>
+            <h4 class="dish__subtitle">Sul</h4>
+            <p class="dish__description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
               iusto quibusdam maxime ut omnis tempore aut placeat neque
               praesentium quas?

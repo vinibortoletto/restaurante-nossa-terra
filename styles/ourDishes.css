@@ -1,6 +1,7 @@
 .ourDishes__dish {
   padding: 1rem;
   background-color: var(--c-green);
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -11,20 +12,20 @@
 }
 
 /* Dish Image ------------------------------------------------------------ */
-.ourDishesDish__imgContainer {
+.dish__imgContainer {
   width: 100%;
   height: 23rem;
   position: relative;
 }
 
-.ourDishesDish__img {
+.dish__img {
   width: 100%;
   height: 23rem;
   object-fit: cover;
 }
 
-.ourDishesDish__imgBar--big,
-.ourDishesDish__imgBar--small {
+.dish__imgBar--big,
+.dish__imgBar--small {
   width: 100%;
   height: 1rem;
 
@@ -34,20 +35,20 @@
   background-color: var(--c-green);
 }
 
-.ourDishesDish__imgBar--small {
+.dish__imgBar--small {
   height: 0.5rem;
   bottom: 2.5rem;
   background-color: var(--c-green);
 }
 
 @media screen and (min-width: 768px) {
-  .ourDishesDish__imgContainer {
+  .dish__imgContainer {
     width: 55vw;
     margin: 0 -1rem;
   }
 
-  .ourDishesDish__imgBar--big,
-  .ourDishesDish__imgBar--small {
+  .dish__imgBar--big,
+  .dish__imgBar--small {
     width: 1rem;
     height: 100%;
 
@@ -56,65 +57,65 @@
     right: 1rem;
   }
 
-  .ourDishesDish__imgBar--small {
+  .dish__imgBar--small {
     width: 0.5rem;
     right: 2.5rem;
   }
 
   /* Style for Dishes positioned on the right */
-  .ourDishes__dish--positionRight .ourDishesDish__imgContainer {
+  .ourDishes__dish--positionRight .dish__imgContainer {
     order: 1;
   }
 
-  .ourDishes__dish--positionRight .ourDishesDish__imgBar--big {
+  .ourDishes__dish--positionRight .dish__imgBar--big {
     left: 1rem;
   }
 
-  .ourDishes__dish--positionRight .ourDishesDish__imgBar--small {
+  .ourDishes__dish--positionRight .dish__imgBar--small {
     left: 2.5rem;
   }
 
-  .ourDishes__dish--positionRight .ourDishesDish__text {
+  .ourDishes__dish--positionRight .dish__textContainer {
     text-align: right;
   }
 }
 
 /* Dish Text --------------------------------------------------------------*/
-.ourDishesDish__text {
+.dish__textContainer {
   text-align: center;
   padding: 3rem 0;
 }
 
-.ourDishesDishText__title {
+.dish__title {
   color: var(--c-yellow);
   font-family: var(--ff-special);
   font-size: 2.3rem;
   margin-bottom: 1rem;
 }
 
-.ourDishesDishText__subtitle {
+.dish__subtitle {
   color: var(--c-blue);
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
-.ourDishesDishText__description {
+.dish__description {
   color: var(--c-white);
 }
 
 @media screen and (min-width: 768px) {
-  .ourDishesDish__text {
+  .dish__textContainer {
     max-width: 35%;
     margin: auto;
     text-align: left;
   }
 
-  .ourDishesDishText__title {
+  .dish__title {
     font-size: 2.5rem;
   }
 
-  .ourDishesDishText__subtitle {
+  .dish__subtitle {
     font-size: 1.5rem;
   }
 }
