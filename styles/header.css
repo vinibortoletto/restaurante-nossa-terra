@@ -17,6 +17,14 @@
   transition: 0.2s ease-in-out;
 }
 
+/* Hide page title. Accessible only for screen readers */
+.header__title {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: -9999px;
+}
+
 .header.show {
   opacity: 1;
   pointer-events: all;
