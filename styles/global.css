@@ -48,6 +48,10 @@ a {
   z-index: -1;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   .ourDishes__title {
     font-size: 3rem;
