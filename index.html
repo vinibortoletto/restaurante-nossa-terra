@@ -14,30 +14,366 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/_style.css" />
+
+    <!-- JavaScript -->
+    <script type="module" src="/scripts/_script.js" async></script>
   </head>
   <body>
-    <header class="pageHeader">
-      <img
-        class="pageHeader__logo"
-        src="/images/logo.png"
-        alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
-      />
+    <header class="header" id="header">
+      <div class="header__logoContainer">
+        <img
+          class="header__logo"
+          src="/images/logo.png"
+          alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
+        />
+      </div>
 
-      <nav class="pageHeader__nav">
-        <i class="pageHeaderNav__icon fa-solid fa-bars"></i>
+      <!-- Menu Mobile -->
+      <nav class="header__menu--mobile">
+        <button type="button" id="header__button">
+          <i class="header__icon fa-solid fa-bars"></i>
+        </button>
 
-        <ul class="pageHeaderNav__list">
-          <li class="pageHeaderNavList__item">Início</li>
-          <li class="pageHeaderNavList__item">Cardápio</li>
-          <li class="pageHeaderNavList__item">Depoimentos</li>
-          <li class="pageHeaderNavList__item">Sobre</li>
-          <li class="pageHeaderNavList__item">Contato</li>
+        <ul class="header__list--mobile hide" id="menu">
+          <li class="header__item--mobile">
+            <a class="header__link active" href="#hero">Início</a>
+          </li>
+          <li class="header__item--mobile">
+            <a class="header__link" href="#ourDishes">Cardápio</a>
+          </li>
+          <li class="header__item--mobile">
+            <a class="header__link" href="#testimonials">Depoimentos</a>
+          </li>
+          <li class="header__item--mobile">
+            <a class="header__link" href="#about">Sobre</a>
+          </li>
+          <li class="header__item--mobile">
+            <a class="header__link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Menu Desktop -->
+      <nav class="header__menu--desktop">
+        <ul class="header__list--desktop">
+          <li>
+            <a class="header__link header__link--desktop active" href="#hero"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a class="header__link header__link--desktop" href="#ourDishes"
+              >Cardápio</a
+            >
+          </li>
+          <li>
+            <a class="header__link header__link--desktop" href="#testimonials"
+              >Depoimentos</a
+            >
+          </li>
+          <li>
+            <a class="header__link header__link--desktop" href="#about"
+              >Sobre</a
+            >
+          </li>
+          <li>
+            <a class="header__link header__link--desktop" href="#contact"
+              >Contato</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>main</main>
+    <main>
+      <section class="hero" id="hero">
+        <img
+          src="./images/hero-bg.png"
+          alt="imagem de um banquete com vários tipos de comidas típica brasileira"
+          class="hero__bg"
+        />
 
-    <footer>footer</footer>
+        <div class="hero__content">
+          <p class="hero__text">Todos os sabores da</p>
+          <img
+            class="hero__logo"
+            src="./images/logo.png"
+            alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
+          />
+          <p class="hero__text">em um só lugar</p>
+        </div>
+      </section>
+
+      <section class="ourDishes" id="ourDishes">
+        <h2 class="ourDishes__title">Nossos pratos</h2>
+
+        <!-- Feijoada -->
+        <article class="ourDishes__dish">
+          <div class="dish__imgContainer">
+            <img
+              src="./images/feijoada.png"
+              alt="Mesa de madeira, sobre a qual descansa um prato amerelo contendo arroz, feijoada, couve refogada, farinha e vinagrete. Ao lado, um punhado de grãos de feijão preto cru espalhado junto com três dentes de alho."
+              class="dish__img"
+            />
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
+          </div>
+
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Feijoada</h3>
+            <h4 class="dish__subtitle">Sudeste</h4>
+            <p class="dish__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              iusto quibusdam maxime ut omnis tempore aut placeat neque
+              praesentium quas?
+            </p>
+          </div>
+        </article>
+
+        <!-- Pato No Tucupi -->
+        <article class="ourDishes__dish ourDishes__dish--positionRight">
+          <div class="dish__imgContainer">
+            <img
+              src="./images/pato-no-tucupi.png"
+              alt="Uma mesa de madeira, sobre a qual se encontra uma cassarola contendo um ensopado de pato no tucupi. Ao lado, um pequeno pote com farinha amarela, próximo à uma pano esverdeado."
+              class="dish__img"
+            />
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
+          </div>
+
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Pato no Tucupi</h3>
+            <h4 class="dish__subtitle">Norte</h4>
+            <p class="dish__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              iusto quibusdam maxime ut omnis tempore aut placeat neque
+              praesentium quas?
+            </p>
+          </div>
+        </article>
+
+        <!-- Baião De Dois -->
+        <article class="ourDishes__dish">
+          <div class="dish__imgContainer">
+            <img
+              src="./images/baiao-de-dois.png"
+              alt="Mesa de madeira, na qual descansa uma panela com Baião De Dois, um arroz com vários tupos de legumes e carne."
+              class="dish__img"
+            />
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
+          </div>
+
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Baião De Dois</h3>
+            <h4 class="dish__subtitle">Nordeste</h4>
+            <p class="dish__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              iusto quibusdam maxime ut omnis tempore aut placeat neque
+              praesentium quas?
+            </p>
+          </div>
+        </article>
+
+        <!-- Arroz Com Pequi -->
+        <article class="ourDishes__dish ourDishes__dish--positionRight">
+          <div class="dish__imgContainer">
+            <img
+              src="./images/arroz-com-pequi.png"
+              alt="Uma travessa contendo arroz amarelado com pequis e carnes no meio."
+              class="dish__img"
+            />
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
+          </div>
+
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Arroz Com Pequi</h3>
+            <h4 class="dish__subtitle">Centro-Oeste</h4>
+            <p class="dish__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              iusto quibusdam maxime ut omnis tempore aut placeat neque
+              praesentium quas?
+            </p>
+          </div>
+        </article>
+
+        <!-- Churrasco -->
+        <article class="ourDishes__dish">
+          <div class="dish__imgContainer">
+            <img
+              src="./images/churrasco.png"
+              alt="Um grelha sobre brasas, com dois filés de carne sendo manejados por uma pessoa."
+              class="dish__img"
+            />
+            <div class="dish__imgBar--big"></div>
+            <div class="dish__imgBar--small"></div>
+          </div>
+
+          <div class="dish__textContainer">
+            <h3 class="dish__title">Churrasco</h3>
+            <h4 class="dish__subtitle">Sul</h4>
+            <p class="dish__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              iusto quibusdam maxime ut omnis tempore aut placeat neque
+              praesentium quas?
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <h2 class="testimonials__title">Quem já provou, aprova!</h2>
+
+        <section class="testimonials__testimonialContainer">
+          <article class="testimonials__testimonial">
+            <img
+              src="./images/agustinho-carrara.png"
+              alt="imagem de um homem sorrindo, de costas para um táxi amarelo "
+              class="testimonials__img"
+            />
+
+            <blockquote class="testimonials__quote">
+              "Uma maravilha! Levei toda a minha fámilia. Estava tão boa que meu
+              sogro nem reclamou de ter que pagar a conta."
+            </blockquote>
+
+            <h3 class="testimonials__author">Agustinho Carrara</h3>
+          </article>
+
+          <article class="testimonials__testimonial">
+            <img
+              src="./images/casimiro-miguel.png"
+              alt="imagem de um homem sorrindo, vestindo uma camiseta preta e dando um jóia para a câmera."
+              class="testimonials__img"
+            />
+
+            <blockquote class="testimonials__quote">
+              "Coisa linda! Levei a rapaziada toda e amassamos. E o melhor:
+              Nossa Terra aceitas pix."
+            </blockquote>
+
+            <h3 class="testimonials__author">Casimiro Miguel</h3>
+          </article>
+
+          <article class="testimonials__testimonial">
+            <img
+              src="./images/gravida-de-taubate.png"
+              alt="uma mulher grávida sentada ao pé de uma árvore, sorrindo e usando um vestido colorido."
+              class="testimonials__img"
+            />
+
+            <blockquote class="testimonials__quote">
+              "Estava tudo uma delícia! Comida farta o suficiente para alimentar
+              todos os meus 32 filhos."
+            </blockquote>
+
+            <h3 class="testimonials__author">Grávida de Taubaté</h3>
+          </article>
+        </section>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="about__title">Nossa Terra, sua terra</h2>
+
+        <div class="about__imgContainer">
+          <img
+            src="./images/about-bg.png"
+            alt="salão de um restaurante com cinco mesas quadradas, de madeira, com toalhas brancas sobre elas. Cada mesa acompanha duas cadeiras, também de madeira. Ao fundo, há várias árvores e vegetação decorando o salão."
+            class="about__bg"
+          />
+          <img
+            src="./images/flag.png"
+            alt="três quadros formando a bandeira do brasil"
+            class="about__flag"
+          />
+        </div>
+
+        <div class="about__content">
+          <p class="about__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi
+            corporis placeat magni labore voluptatem eaque expedita consequuntur
+            ipsam odio fuga laboriosam fugit neque exercitationem ratione libero
+            laudantium molestiae nulla culpa quidem odit.
+          </p>
+
+          <p class="about__paragraph">
+            Qui nostrum a illum? Eveniet et culpa ipsa voluptatibus, tempora
+            fugit a quibusdam similique, cupiditate expedita magnam nihil
+            consequatur quo exercitationem obcaecati aperiam libero eum vel
+            officiis perspiciatis doloremque vitae impedit velit! Impedit
+            perferendis iste laboriosam possimus veritatis fugit enim
+            repudiandae odit minus.
+          </p>
+
+          <p class="about__paragraph">
+            Doloribus quo! Debitis provident quas explicabo! Quas eum sunt amet
+            voluptatum laboriosam assumenda nisi vero odit. Tenetur delectus
+            similique doloribus ut placeat fuga atque.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <img
+          src="./images/logo.png"
+          alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
+          class="contact__logo"
+        />
+
+        <div class="contact__info">
+          <p class="contact__address">Rua Da Esperança, 13 - Piracicaba/SP</p>
+          <p class="contact__phone">(12) 3456 - 7890</p>
+        </div>
+
+        <div class="contact__socials">
+          <div class="contact__iconContainer">
+            <i class="fa-brands fa-instagram contact__icon"></i>
+          </div>
+
+          <div class="contact__iconContainer">
+            <i class="fa-brands fa-facebook-f contact__icon"></i>
+          </div>
+
+          <div class="contact__iconContainer">
+            <i class="fa-brands fa-tiktok contact__icon"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        <p>Desenvolvido por <span class="bold">vini.bortoletto</span></p>
+        <p class="footer__imgCopyright">
+          Imagens por Pexels, Unsplash e Flation
+        </p>
+      </div>
+
+      <div class="footer__socials">
+        <a href="https://linkedin.com/in/vinicius-bortoletto" target="_blank">
+          <span class="footer__iconText">LinkedIn</span>
+          <i class="footer__icon fa-brands fa-linkedin-in"></i
+        ></a>
+
+        <a href="https://github.com/vinibortoletto/" target="_blank">
+          <span class="footer__iconText">GitHub</span>
+          <i class="footer__icon fa-brands fa-github-alt"></i
+        ></a>
+
+        <a href="https://vinibortoletto.netlify.app/" target="_blank">
+          <span class="footer__iconText">Portfolio</span>
+          <img
+            src="./images/vini-logo.png"
+            alt="logo de vinicius bortoletto"
+            class="footer__logo"
+          />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

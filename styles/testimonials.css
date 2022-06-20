@@ -1,0 +1,31 @@
+.testimonials__testimonialContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials__testimonialContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.testimonials__img {
+  width: 10rem;
+  margin-bottom: 2rem;
+  border-radius: 100%;
+  border: 5px solid var(--c-green);
+}
+
+.testimonials__quote {
+  max-width: 20rem;
+  margin: 0 auto;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonials__author {
+  font-family: var(--ff-special);
+}

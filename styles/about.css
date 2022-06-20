@@ -1,0 +1,33 @@
+.about__imgContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.about__flag {
+  transform: rotate(90deg);
+  width: 30rem;
+}
+
+.about__content {
+  padding: 0 2rem;
+}
+
+.about__paragraph {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .about__flag {
+    transform: rotate(0);
+    width: 40rem;
+  }
+
+  .about__content {
+    max-width: 60rem;
+    margin: auto;
+  }
+}
