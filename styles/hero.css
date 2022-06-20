@@ -1,13 +1,3 @@
-.hero__bg {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-
-  position: absolute;
-  left: 0;
-  z-index: -1;
-}
-
 .hero__content {
   height: 100vh;
   display: flex;
