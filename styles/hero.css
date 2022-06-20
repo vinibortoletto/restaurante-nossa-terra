@@ -13,4 +13,6 @@
 
 .hero__text {
   color: var(--c-white);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
