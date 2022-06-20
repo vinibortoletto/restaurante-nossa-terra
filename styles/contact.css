@@ -1,0 +1,43 @@
+.contact {
+  text-align: center;
+  margin: 20rem 0;
+  padding: 0 2rem;
+}
+
+/* Image ------------------------------------------------ */
+.contact__logo {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+/* Info ------------------------------------------------ */
+.contact__info {
+  margin-bottom: 2rem;
+}
+
+.contact__address {
+  margin-bottom: 0.5rem;
+}
+
+/* Socials ------------------------------------------------ */
+.contact__socials {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact__iconContainer {
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--c-green);
+  border-radius: 50%;
+}
+
+.contact__icon {
+  color: var(--c-white);
+}
