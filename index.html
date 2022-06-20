@@ -39,19 +39,19 @@
 
         <ul class="header__list--mobile hide" id="menu">
           <li class="header__item--mobile">
-            <a class="header__link active" href="#inicio">Início</a>
+            <a class="header__link active" href="#hero">Início</a>
           </li>
           <li class="header__item--mobile">
-            <a class="header__link" href="#cardapio">Cardápio</a>
+            <a class="header__link" href="#ourDishes">Cardápio</a>
           </li>
           <li class="header__item--mobile">
-            <a class="header__link" href="#depoimentos">Depoimentos</a>
+            <a class="header__link" href="#testimonials">Depoimentos</a>
           </li>
           <li class="header__item--mobile">
-            <a class="header__link" href="#sobre">Sobre</a>
+            <a class="header__link" href="#about">Sobre</a>
           </li>
           <li class="header__item--mobile">
-            <a class="header__link" href="#contato">Contato</a>
+            <a class="header__link" href="#contact">Contato</a>
           </li>
         </ul>
       </nav>
@@ -60,27 +60,27 @@
       <nav class="header__menu--desktop">
         <ul class="header__list--desktop">
           <li>
-            <a class="header__link header__link--desktop active" href="#inicio"
+            <a class="header__link header__link--desktop active" href="#hero"
               >Início</a
             >
           </li>
           <li>
-            <a class="header__link header__link--desktop" href="#cardapio"
+            <a class="header__link header__link--desktop" href="#ourDishes"
               >Cardápio</a
             >
           </li>
           <li>
-            <a class="header__link header__link--desktop" href="#depoimentos"
+            <a class="header__link header__link--desktop" href="#testimonials"
               >Depoimentos</a
             >
           </li>
           <li>
-            <a class="header__link header__link--desktop" href="#sobre"
+            <a class="header__link header__link--desktop" href="#about"
               >Sobre</a
             >
           </li>
           <li>
-            <a class="header__link header__link--desktop" href="#contato"
+            <a class="header__link header__link--desktop" href="#contact"
               >Contato</a
             >
           </li>
@@ -89,7 +89,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <img
           src="./images/hero-bg.png"
           alt="imagem de um banquete com vários tipos de comidas típica brasileira"
@@ -107,7 +107,7 @@
         </div>
       </section>
 
-      <section class="ourDishes">
+      <section class="ourDishes" id="ourDishes">
         <h2 class="ourDishes__title">Nossos pratos</h2>
 
         <!-- Feijoada -->
@@ -226,7 +226,7 @@
         </article>
       </section>
 
-      <section class="testimonials">
+      <section class="testimonials" id="testimonials">
         <h2 class="testimonials__title">Quem já provou, aprova!</h2>
 
         <section class="testimonials__testimonialContainer">
@@ -275,74 +275,74 @@
             <h3 class="testimonials__author">Grávida de Taubaté</h3>
           </article>
         </section>
+      </section>
 
-        <section class="about">
-          <h2 class="about__title">Nossa Terra, sua terra</h2>
+      <section class="about" id="about">
+        <h2 class="about__title">Nossa Terra, sua terra</h2>
 
-          <div class="about__imgContainer">
-            <img
-              src="./images/about-bg.png"
-              alt="salão de um restaurante com cinco mesas quadradas, de madeira, com toalhas brancas sobre elas. Cada mesa acompanha duas cadeiras, também de madeira. Ao fundo, há várias árvores e vegetação decorando o salão."
-              class="about__bg"
-            />
-            <img
-              src="./images/flag.png"
-              alt="três quadros formando a bandeira do brasil"
-              class="about__flag"
-            />
-          </div>
-
-          <div class="about__content">
-            <p class="about__paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              commodi corporis placeat magni labore voluptatem eaque expedita
-              consequuntur ipsam odio fuga laboriosam fugit neque exercitationem
-              ratione libero laudantium molestiae nulla culpa quidem odit.
-            </p>
-
-            <p class="about__paragraph">
-              Qui nostrum a illum? Eveniet et culpa ipsa voluptatibus, tempora
-              fugit a quibusdam similique, cupiditate expedita magnam nihil
-              consequatur quo exercitationem obcaecati aperiam libero eum vel
-              officiis perspiciatis doloremque vitae impedit velit! Impedit
-              perferendis iste laboriosam possimus veritatis fugit enim
-              repudiandae odit minus.
-            </p>
-
-            <p class="about__paragraph">
-              Doloribus quo! Debitis provident quas explicabo! Quas eum sunt
-              amet voluptatum laboriosam assumenda nisi vero odit. Tenetur
-              delectus similique doloribus ut placeat fuga atque.
-            </p>
-          </div>
-        </section>
-
-        <section class="contact">
+        <div class="about__imgContainer">
           <img
-            src="./images/logo.png"
-            alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
-            class="contact__logo"
+            src="./images/about-bg.png"
+            alt="salão de um restaurante com cinco mesas quadradas, de madeira, com toalhas brancas sobre elas. Cada mesa acompanha duas cadeiras, também de madeira. Ao fundo, há várias árvores e vegetação decorando o salão."
+            class="about__bg"
           />
+          <img
+            src="./images/flag.png"
+            alt="três quadros formando a bandeira do brasil"
+            class="about__flag"
+          />
+        </div>
 
-          <div class="contact__info">
-            <p class="contact__address">Rua Da Esperança, 13 - Piracicaba/SP</p>
-            <p class="contact__phone">(12) 3456 - 7890</p>
+        <div class="about__content">
+          <p class="about__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi
+            corporis placeat magni labore voluptatem eaque expedita consequuntur
+            ipsam odio fuga laboriosam fugit neque exercitationem ratione libero
+            laudantium molestiae nulla culpa quidem odit.
+          </p>
+
+          <p class="about__paragraph">
+            Qui nostrum a illum? Eveniet et culpa ipsa voluptatibus, tempora
+            fugit a quibusdam similique, cupiditate expedita magnam nihil
+            consequatur quo exercitationem obcaecati aperiam libero eum vel
+            officiis perspiciatis doloremque vitae impedit velit! Impedit
+            perferendis iste laboriosam possimus veritatis fugit enim
+            repudiandae odit minus.
+          </p>
+
+          <p class="about__paragraph">
+            Doloribus quo! Debitis provident quas explicabo! Quas eum sunt amet
+            voluptatum laboriosam assumenda nisi vero odit. Tenetur delectus
+            similique doloribus ut placeat fuga atque.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <img
+          src="./images/logo.png"
+          alt="um logo com o texto nossa casa em branco, com a bandeira do brasil ao fundo"
+          class="contact__logo"
+        />
+
+        <div class="contact__info">
+          <p class="contact__address">Rua Da Esperança, 13 - Piracicaba/SP</p>
+          <p class="contact__phone">(12) 3456 - 7890</p>
+        </div>
+
+        <div class="contact__socials">
+          <div class="contact__iconContainer">
+            <i class="fa-brands fa-instagram contact__icon"></i>
           </div>
 
-          <div class="contact__socials">
-            <div class="contact__iconContainer">
-              <i class="fa-brands fa-instagram contact__icon"></i>
-            </div>
-
-            <div class="contact__iconContainer">
-              <i class="fa-brands fa-facebook-f contact__icon"></i>
-            </div>
-
-            <div class="contact__iconContainer">
-              <i class="fa-brands fa-tiktok contact__icon"></i>
-            </div>
+          <div class="contact__iconContainer">
+            <i class="fa-brands fa-facebook-f contact__icon"></i>
           </div>
-        </section>
+
+          <div class="contact__iconContainer">
+            <i class="fa-brands fa-tiktok contact__icon"></i>
+          </div>
+        </div>
       </section>
     </main>
 
